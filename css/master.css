@@ -154,6 +154,7 @@ h1, h2, h3, h4 {
 
   /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
+    max-width: 960px;
     padding: 2rem 0 4rem;
   }
   
@@ -632,4 +633,16 @@ h1, h2, h3, h4 {
 
 ::-webkit-scrollbar-thumb:hover{
   background-color: var(--text-color-light);
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
